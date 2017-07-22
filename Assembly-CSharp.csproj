@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{91802A0D-5202-8861-6DCE-5657C80C9D37}</ProjectGuid>
+    <ProjectGuid>{E041A5D3-BBEF-E038-91E3-ABF159055D50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,7 +46,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\scoreManager.cs" />
+     <Compile Include="Assets\Scripts\sheepCount.cs" />
+     <Compile Include="Assets\Scripts\sheepDestroyer.cs" />
      <Compile Include="Assets\Scripts\sheepGenerator.cs" />
+     <Compile Include="Assets\Scripts\sheepJump.cs" />
      <Compile Include="Assets\Scripts\sheepMove.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

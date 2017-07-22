@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class sheepMove : MonoBehaviour {
-
-	float moveSpeed=5;
+public class sheepCount : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Destroy (this.gameObject, 5f);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (new Vector3 (-1, 0, 0)*moveSpeed*Time.deltaTime);
+		
+	}
+
+	void OnMouseDown(){
+		scoreManager.instance.addToScore (10);
+		Destroy (this);
 	}
 }
