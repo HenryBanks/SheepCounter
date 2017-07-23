@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class sheepGenerator : MonoBehaviour {
 
-	public GameObject sheepPrefab;
+	public GameObject[] sheepPrefab;
 	public Vector3 spawnPos;
 
-	private float timeAtStart;
+    private int sheepselecter;
+    private float timeAtStart;
 	private float timeToNextSheep=1.0f;
 	public float initialSpawnDelay = 0.5f;
 	public float randomDelay=0.05f;
-	private float difficulty=1;
 
 	void generateSheep(){
-		GameObject sheep = Instantiate (sheepPrefab, spawnPos, Quaternion.identity);
-		sheep.GetComponent<sheepMove> ().moveSpeed *= difficulty;
+        sheepselecter = Random.RandomRange(0, sheepPrefab.Length - 1);
+        
+        Instantiate (sheepPrefab[sheepselecter], spawnPos, Quaternion.identity);
 	}
 
 	float getSpawnDelay(){
 		Debug.Log (Time.time - timeAtStart);
-		difficulty = Mathf.Log10 (Time.time - timeAtStart+10);
+		float difficulty = Mathf.Log10 (Time.time - timeAtStart+10);
 		return (initialSpawnDelay + randomDelay * Random.Range (0, 10))/difficulty;
 	}
 

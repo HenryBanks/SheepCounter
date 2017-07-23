@@ -5,17 +5,15 @@ using UnityEngine.UI;
 
 public class scoreManager : MonoBehaviour {
 
-	public Text scoreText;
-	public Text multiplierText;
-
+	private Text scoreText;
 	private int score=0;
-	private int multiplier=1;
 
 	public static scoreManager instance;
 
 	// Use this for initialization
 	void Start () {
 		instance = this;
+		scoreText = GetComponent<Text> ();
 	}
 	
 	// Update is called once per frame
@@ -23,27 +21,19 @@ public class scoreManager : MonoBehaviour {
 		
 	}
 
-	public void resetMultiplier(){
-		multiplier = 1;
-		updateText ();
-	}
-
-	public int getScore(){
-		return score;
-	}
-
 	public void addToScore(int extraScore){
-		score += extraScore*multiplier;
-		if (multiplier < 10) {
-			multiplier++;
-		}
+		score += extraScore;
 		updateText ();
 	}
 
-	void updateText(){
+    public void minusToScore(int extraScore)
+    {
+        score = 0;
+        updateText();
+    }
+
+    void updateText(){
 		string scoreString = "Score: " + score.ToString ();
-		string multiplierString = "Multiplier: " + multiplier.ToString ();
 		scoreText.text = scoreString;
-		multiplierText.text = multiplierString;
 	}
 }
