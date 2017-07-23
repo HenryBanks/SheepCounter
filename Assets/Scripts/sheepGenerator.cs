@@ -11,14 +11,16 @@ public class sheepGenerator : MonoBehaviour {
 	private float timeToNextSheep=1.0f;
 	public float initialSpawnDelay = 0.5f;
 	public float randomDelay=0.05f;
+	private float difficulty=1;
 
 	void generateSheep(){
-		Instantiate (sheepPrefab, spawnPos, Quaternion.identity);
+		GameObject sheep = Instantiate (sheepPrefab, spawnPos, Quaternion.identity);
+		sheep.GetComponent<sheepMove> ().moveSpeed *= difficulty;
 	}
 
 	float getSpawnDelay(){
 		Debug.Log (Time.time - timeAtStart);
-		float difficulty = Mathf.Log10 (Time.time - timeAtStart+10);
+		difficulty = Mathf.Log10 (Time.time - timeAtStart+10);
 		return (initialSpawnDelay + randomDelay * Random.Range (0, 10))/difficulty;
 	}
 

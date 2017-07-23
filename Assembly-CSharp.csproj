@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\sheepGenerator.cs" />
      <Compile Include="Assets\Scripts\sheepJump.cs" />
      <Compile Include="Assets\Scripts\sheepMove.cs" />
+     <Compile Include="Assets\background.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
