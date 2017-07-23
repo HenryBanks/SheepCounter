@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class sheepCount : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public AudioClip coinClip;
+    private AudioSource source;
+    public float lowPitchRange; //.75F
+    public float highPitchRange; // 1.5F
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -16,6 +21,13 @@ public class sheepCount : MonoBehaviour {
 
 	void OnMouseDown(){
 		scoreManager.instance.addToScore (10);
+        source.pitch = Random.Range(lowPitchRange, highPitchRange);
+        source.PlayOneShot(coinClip);
 		Destroy (this);
 	}
+
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 }
