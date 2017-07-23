@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class sheepMove : MonoBehaviour {
 
-	float moveSpeed=5;
+	public float moveSpeed=5;
 
 	// Use this for initialization
 	void Start () {

@@ -20,7 +20,7 @@ public class sheepJump : MonoBehaviour {
         if (other.transform) {
             print(other.transform.tag);
             if (other.transform.tag == "sheep") {
-                other.transform.Translate(new Vector3(0, upmove, 0));
+                other.GetComponent<Rigidbody>().AddForce(new Vector3(0, upmove, 0), ForceMode.Impulse);
                 
             }
         }
