@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class sheepMove : MonoBehaviour {
 
-	public float moveSpeed=5;
+	public  int moveSpeed;
+    public int[] speedselector;
+    private int randomizer;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
+        RandomSpeed();
 		Destroy (this.gameObject, 5f);
 	}
 	
@@ -15,4 +18,9 @@ public class sheepMove : MonoBehaviour {
 	void Update () {
 		transform.Translate (new Vector3 (-1, 0, 0)*moveSpeed*Time.deltaTime);
 	}
+
+    void RandomSpeed() {
+        randomizer = Random.Range(0, speedselector.Length - 1);
+        moveSpeed = speedselector[randomizer];
+    }
 }
