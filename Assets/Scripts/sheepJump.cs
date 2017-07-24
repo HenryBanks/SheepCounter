@@ -6,6 +6,7 @@ public class sheepJump : MonoBehaviour {
 
     // How far the sheep will move
     public float upmove;
+   
 
     public AudioClip[] JumpSound;
     public AudioSource source;
@@ -13,7 +14,7 @@ public class sheepJump : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+
 	}
 
 
@@ -26,7 +27,13 @@ public class sheepJump : MonoBehaviour {
                 soundselecter = Random.Range(0, JumpSound.Length -1);
                 source.PlayOneShot(JumpSound[soundselecter]);
                 other.GetComponent<Rigidbody>().AddForce(new Vector3(0, upmove, 0), ForceMode.Impulse);
-                
+            }
+
+            if (other.transform.tag == "Wolf")
+            {
+                soundselecter = Random.Range(0, JumpSound.Length - 1);
+                source.PlayOneShot(JumpSound[soundselecter]);
+                other.GetComponent<Rigidbody>().AddForce(new Vector3(0, upmove, 0), ForceMode.Impulse);
             }
         }
     }

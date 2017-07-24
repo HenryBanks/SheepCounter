@@ -24,7 +24,7 @@ public class sheepGenerator : MonoBehaviour {
     }
 
 	float getSpawnDelay(){
-		Debug.Log (Time.time - timeAtStart);
+		//Debug.Log (Time.time - timeAtStart);
 		 difficulty = Mathf.Log10 (Time.time - timeAtStart+10);
 		return (initialSpawnDelay + randomDelay * Random.Range (0, 10))/difficulty;
 
