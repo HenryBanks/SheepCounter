@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class sheepMove : MonoBehaviour {
 
-	public  int moveSpeed;
-    public int[] speedselector;
+	public int moveSpeed;
+	public int minSpeed;
+	public int maxSpeed;
     private int randomizer;
     public Animator MyAnim;
 
@@ -26,8 +27,7 @@ public class sheepMove : MonoBehaviour {
 	}
 
     void RandomSpeed() {
-        randomizer = Random.Range(0, speedselector.Length - 1);
-        moveSpeed = speedselector[randomizer];
+		moveSpeed = Random.Range(minSpeed,maxSpeed);
     }
 
    

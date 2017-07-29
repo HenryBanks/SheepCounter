@@ -16,7 +16,7 @@ public class sheepGenerator : MonoBehaviour {
     private int IntAsDiff = Mathf.FloorToInt(difficulty);
 
     void generateSheep(){
-        sheepselecter = Random.RandomRange(0, sheepPrefab.Length - 1);
+        sheepselecter = Random.Range(0, sheepPrefab.Length - 1);
         
         GameObject sheep = Instantiate (sheepPrefab[sheepselecter], spawnPos, Quaternion.identity);
 
