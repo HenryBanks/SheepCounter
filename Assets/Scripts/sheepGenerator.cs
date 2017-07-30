@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class sheepGenerator : MonoBehaviour {
 
-	public GameObject[] sheepPrefab;
+	public GameObject sheepPrefab;
+	public GameObject wolfPrefab;
 	public Vector3 spawnPos;
 
-    private int sheepselecter;
     private float timeAtStart;
 	private float timeToNextSheep=1.0f;
 	public float initialSpawnDelay = 0.5f;
@@ -16,11 +16,18 @@ public class sheepGenerator : MonoBehaviour {
     private int IntAsDiff = Mathf.FloorToInt(difficulty);
 
     void generateSheep(){
-        sheepselecter = Random.RandomRange(0, sheepPrefab.Length - 1);
+        int sheepSelecter = Random.Range(1,10);
         
-        GameObject sheep = Instantiate (sheepPrefab[sheepselecter], spawnPos, Quaternion.identity);
+		if (sheepSelecter <= 8) {
 
-        sheep.GetComponent<sheepMove>().moveSpeed *= IntAsDiff;
+			GameObject sheep = Instantiate (sheepPrefab, spawnPos, Quaternion.identity);
+
+			sheep.GetComponent<sheepMove> ().moveSpeed *= IntAsDiff;
+		} else {
+			GameObject wolf = Instantiate (wolfPrefab, spawnPos, Quaternion.identity);
+
+			wolf.GetComponent<sheepMove> ().moveSpeed *= IntAsDiff;
+		}
     }
 
 	float getSpawnDelay(){
