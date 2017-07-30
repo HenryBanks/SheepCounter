@@ -10,7 +10,7 @@ public class scoreManager : MonoBehaviour {
     public Text scoreText;
  	public Text multiplierText;
 
-    private int multiplier = 1;
+    public static int multiplier = 1;
 	public static scoreManager instance;
 
    
