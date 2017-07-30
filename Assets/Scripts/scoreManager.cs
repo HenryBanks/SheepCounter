@@ -52,8 +52,8 @@ public class scoreManager : MonoBehaviour {
 
     public void minusToScore(int scoreToLose)
     {
-		score -= scoreToLose;
-		multiplier = 1;
+	score -= scoreToLose;
+	multiplier = 1;
         updateText();
     }
 
