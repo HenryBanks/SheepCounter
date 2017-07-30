@@ -42,8 +42,9 @@ public class scoreManager : MonoBehaviour {
           }
 
     public void addToScore(int extraScore){
-		score += extraScore * multiplier;
+		score += extraScore;
 		updateText ();
+        score += extraScore * multiplier;
               if (multiplier < 10)
         {
             multiplier++;
