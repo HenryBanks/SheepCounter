@@ -16,7 +16,7 @@ public class wolfCount : MonoBehaviour {
 
     void OnMouseDown()
     {
-        scoreManager.instance.minusToScore(0);
+        scoreManager.instance.minusToScore(50);
         Destroy(this);
     }
 }

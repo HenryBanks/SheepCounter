@@ -50,9 +50,10 @@ public class scoreManager : MonoBehaviour {
                   }
     }
 
-    public void minusToScore(int extraScore)
+    public void minusToScore(int scoreToLose)
     {
-        score = 0;
+		score -= scoreToLose;
+		multiplier = 1;
         updateText();
     }
 
