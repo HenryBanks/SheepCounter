@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -42,8 +42,8 @@ public class scoreManager : MonoBehaviour {
           }
 
     public void addToScore(int extraScore){
-		score += extraScore * multiplier;
-		updateText ();
+	score += extraScore * multiplier;
+	updateText ();
               if (multiplier < 10)
         {
             multiplier++;
