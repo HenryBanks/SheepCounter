@@ -13,7 +13,7 @@ public class sheepMove : MonoBehaviour {
     // Use this for initialization
     void Start () {
         RandomSpeed();
-		Destroy (this.gameObject, 5f);
+		Destroy (this.gameObject, 8f);
         MyAnim = GetComponent<Animator>();
 	}
 	
