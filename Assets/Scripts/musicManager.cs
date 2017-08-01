@@ -18,14 +18,14 @@ public class musicManager : MonoBehaviour {
 
      void Update()
     {
-        if (scoreManager.multiplier > 5 )
+		if (scoreManager.multiplier > 5 && source.isPlaying)
         {
             selecter = 1;
             source.Stop();
             source2.Play();
         }
 
-        if (scoreManager.multiplier < 5 && source2.isPlaying)
+        if (scoreManager.multiplier <= 5 && source2.isPlaying)
         {
             selecter = 0;
             source.Play();
