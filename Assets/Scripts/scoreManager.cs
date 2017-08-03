@@ -12,7 +12,7 @@ public class scoreManager : MonoBehaviour {
 
     public static int multiplier = 1;
 	public static scoreManager instance;
-
+	public sheepGenerator flyingSheepGen;
    
     // Use this for initialization
     void Start () {
@@ -49,6 +49,9 @@ public class scoreManager : MonoBehaviour {
             multiplier++;
                   }
 		updateText ();
+		if (score > 500 && !flyingSheepGen.isSpawning) {
+			flyingSheepGen.isSpawning = true;
+		}
     }
 
     public void minusToScore(int scoreToLose)

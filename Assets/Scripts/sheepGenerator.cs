@@ -8,6 +8,8 @@ public class sheepGenerator : MonoBehaviour {
 	public GameObject sheepPrefab;
 	public GameObject wolfPrefab;
 	public Vector3 spawnPos;
+	public bool isSpawning;
+	public bool flyingSheep;
 
     private float timeAtStart;
 	private float timeToNextSheep=1.0f;
@@ -24,10 +26,17 @@ public class sheepGenerator : MonoBehaviour {
 			GameObject sheep = Instantiate (sheepPrefab, spawnPos, Quaternion.identity);
 
 			sheep.GetComponent<sheepMove> ().moveSpeed *= IntAsDiff;
+			if (flyingSheep) {
+				sheep.GetComponent<Rigidbody> ().useGravity=false;
+			}
+
 		} else {
 			GameObject wolf = Instantiate (wolfPrefab, spawnPos, Quaternion.identity);
 
 			wolf.GetComponent<sheepMove> ().moveSpeed *= IntAsDiff;
+			if (flyingSheep) {
+				wolf.GetComponent<Rigidbody> ().useGravity=false;
+			}
 		}
     }
 
@@ -46,10 +55,10 @@ public class sheepGenerator : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Time.time > timeToNextSheep) {
-			generateSheep ();
+		if (Time.time > timeToNextSheep && isSpawning) {
 			float currentSpawnDelay = getSpawnDelay ();
 			timeToNextSheep = Time.time + currentSpawnDelay;
+			generateSheep ();
 		}
 	}
 }
