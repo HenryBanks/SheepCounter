@@ -11,12 +11,19 @@ public class wolfCount : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (transform.position.x <= -10)
+        {
+            livesManager.instance.loseLife();
+            Destroy(this);
+        }
+    }
 
     void OnMouseDown()
     {
-        scoreManager.instance.minusToScore(50);
-        Destroy(this);
+        if () {
+            this.GetComponent<Rigidbody>().AddForce(new Vector3(0.00001f, 0, 0), ForceMode.Impulse);
+            scoreManager.instance.minusToScore(50);
+            Destroy(this);
+        }
     }
 }
