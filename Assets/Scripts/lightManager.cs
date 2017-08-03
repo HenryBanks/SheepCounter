@@ -14,6 +14,7 @@ public class lightManager : MonoBehaviour {
     void Start () {
 		thisLight = GetComponent<Light> ();
         colour = background.GetComponent<SpriteRenderer>().color;
+        
     }
 	
 	// Update is called once per frame
@@ -22,7 +23,7 @@ public class lightManager : MonoBehaviour {
 			float t = Mathf.PingPong (Time.time, duration) / duration;
 			thisLight.color = Color.Lerp (Color.white, Color.red, t);
             background.GetComponent<SpriteRenderer>().color = thisLight.color;
-        } else {
+        } else if(scoreManager.multiplier < 5){
 			thisLight.color = Color.white;
             background.GetComponent<SpriteRenderer>().color = colour;
         }

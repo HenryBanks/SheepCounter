@@ -13,17 +13,20 @@ public class wolfCount : MonoBehaviour {
 	void Update () {
         if (transform.position.x <= -10)
         {
-            livesManager.instance.loseLife();
+           /** livesManager.instance.loseLife();
             Destroy(this);
+            */
         }
     }
 
-    void OnMouseDown()
-    {
-        if () {
-            this.GetComponent<Rigidbody>().AddForce(new Vector3(0.00001f, 0, 0), ForceMode.Impulse);
+    void OnMouseDown() { 
+
+         livesManager.instance.loseLife();
+         Destroy(this);
+
+            /** this.GetComponent<Rigidbody>().AddForce(new Vector3(0.00001f, 0, 0), ForceMode.Impulse);
             scoreManager.instance.minusToScore(50);
             Destroy(this);
-        }
+        */
     }
 }

@@ -18,4 +18,13 @@ public class menuManager : MonoBehaviour {
 	public void changeSceneToGame(){
 		SceneManager.LoadScene ("testScene");
 	}
+
+    public void Retry() {
+        SceneManager.LoadScene("testScene");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

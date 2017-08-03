@@ -28,7 +28,7 @@ public class livesManager : MonoBehaviour {
 		currentLives--;
 		if (currentLives <= 0) {
 			Debug.Log ("Game Over");
-			SceneManager.LoadScene("Scenes/testScene");
+			SceneManager.LoadScene("Scenes/GameOver");
 		}
 		updateText ();
 	}
