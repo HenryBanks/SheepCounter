@@ -62,9 +62,11 @@ public class scoreManager : MonoBehaviour {
     }
 
     void updateText(){
-        string scoreString = "Score: " + score.ToString ();
-        scoreText.text = scoreString;
-        string multiplierString = "Multiplier: " + multiplier.ToString();
-        multiplierText.text = multiplierString;
+        //string scoreString = "Score: " + score.ToString ();
+        //scoreText.text = scoreString;
+        //string multiplierString = "Multiplier: " + multiplier.ToString();
+        //multiplierText.text = multiplierString;
+		string scoreAndMultiplierString = score.ToString () + " X" + multiplier.ToString ();
+		scoreText.text = scoreAndMultiplierString;
 	}
 }
