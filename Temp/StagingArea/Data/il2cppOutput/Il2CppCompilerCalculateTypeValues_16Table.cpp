@@ -84,6 +84,7 @@
 #include "AssemblyU2DCSharp_sheepJump3916182875.h"
 #include "AssemblyU2DCSharp_sheepMove1570380626.h"
 #include "AssemblyU2DCSharp_wolfCount3913541383.h"
+#include "AssemblyU2DCSharp_endScoreManager739037824.h"
 
 
 
@@ -556,10 +557,6 @@ extern const int32_t g_FieldOffsetTable1672[4] =
 	livesManager_t1202585870_StaticFields::get_offset_of_instance_5(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1673 = { sizeof (menuManager_t3432945898), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1673[1] = 
-{
-	menuManager_t3432945898::get_offset_of_scoreText_2(),
-};
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1674 = { sizeof (musicManager_t3229378930), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1674[3] = 
 {
@@ -619,6 +616,11 @@ extern const int32_t g_FieldOffsetTable1680[4] =
 	sheepMove_t1570380626::get_offset_of_MyAnim_5(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1681 = { sizeof (wolfCount_t3913541383), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1682 = { sizeof (endScoreManager_t739037824), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1682[1] = 
+{
+	endScoreManager_t739037824::get_offset_of_scoreText_2(),
+};
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

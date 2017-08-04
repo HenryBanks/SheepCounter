@@ -10594,6 +10594,9 @@ extern "C" void background__ctor_m3305622049 ();
 extern "C" void background_Start_m1117316777 ();
 extern "C" void background_Update_m1025067666 ();
 extern "C" void background_OnMouseDown_m1281932323 ();
+extern "C" void endScoreManager__ctor_m2937960139 ();
+extern "C" void endScoreManager_Start_m3500247687 ();
+extern "C" void endScoreManager_Update_m3642413886 ();
 extern "C" void HeartSystem__ctor_m2178068820 ();
 extern "C" void HeartSystem_Start_m2119168988 ();
 extern "C" void HeartSystem_Update_m309758489 ();
@@ -10667,7 +10670,7 @@ extern "C" void wolfCount__ctor_m2392022582 ();
 extern "C" void wolfCount_Start_m489321762 ();
 extern "C" void wolfCount_Update_m1747015947 ();
 extern "C" void wolfCount_OnMouseDown_m2835789314 ();
-extern const Il2CppMethodPointer g_MethodPointers[10653] = 
+extern const Il2CppMethodPointer g_MethodPointers[10656] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -21249,6 +21252,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10653] =
 	background_Start_m1117316777,
 	background_Update_m1025067666,
 	background_OnMouseDown_m1281932323,
+	endScoreManager__ctor_m2937960139,
+	endScoreManager_Start_m3500247687,
+	endScoreManager_Update_m3642413886,
 	HeartSystem__ctor_m2178068820,
 	HeartSystem_Start_m2119168988,
 	HeartSystem_Update_m309758489,

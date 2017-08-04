@@ -13673,6 +13673,9 @@ extern const Il2CppType sheepMove_t1570380626_1_0_0 = { (void*)1680, 0, IL2CPP_T
 extern const Il2CppType wolfCount_t3913541383_0_0_0 = { (void*)1681, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType wolfCount_t3913541383_1_0_0 = { (void*)1681, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
+extern const Il2CppType endScoreManager_t739037824_0_0_0 = { (void*)1682, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType endScoreManager_t739037824_1_0_0 = { (void*)1682, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
 Il2CppGenericClass IComparer_1_t1676750663_GenericClass = { 166, { &GenInst_DefaultComparer_t3074655092_gp_0_0_0_0, NULL }, NULL };
 extern const Il2CppType IComparer_1_t1676750663_0_0_0 = { &IComparer_1_t1676750663_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
@@ -13717,7 +13720,7 @@ extern const Il2CppType TypeTagU5BU5D_t582616213_0_0_0 = { (void*)&TypeTag_t1412
 
 extern const Il2CppType ITrackingHandler_t2759960940_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t194660197_0_0_0 = { (void*)&ITrackingHandler_t2759960940_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[7241] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[7243] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -20904,6 +20907,8 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7241] =
 	&Animator_t69676727_0_0_6,
 	&wolfCount_t3913541383_0_0_0,
 	&wolfCount_t3913541383_1_0_0,
+	&endScoreManager_t739037824_0_0_0,
+	&endScoreManager_t739037824_1_0_0,
 	&IEnumerator_1_t1705424029_0_0_0,
 	&IEnumerator_1_t4085313661_0_0_0,
 	&IList_1_t260801773_0_0_0,

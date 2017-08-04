@@ -21,19 +21,20 @@
 #include "mscorlib_System_Void1841601450.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 #include "AssemblyU2DCSharp_scoreManager2403363277.h"
-#include "AssemblyU2DCSharp_HeartSystem3448635605.h"
+#include "AssemblyU2DCSharp_endScoreManager739037824.h"
+#include "mscorlib_System_String2029220233.h"
 #include "mscorlib_System_Int322071877448.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "UnityEngine_UI_UnityEngine_UI_Text356221433.h"
+#include "AssemblyU2DCSharp_HeartSystem3448635605.h"
 #include "AssemblyU2DCSharp_livesManager1202585870.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
 #include "mscorlib_System_Boolean3825574718.h"
 #include "AssemblyU2DCSharp_Intro_Text3199159032.h"
 #include "mscorlib_System_Single2076509932.h"
-#include "UnityEngine_UI_UnityEngine_UI_Text356221433.h"
 #include "UnityEngine_UnityEngine_Component3819376471.h"
-#include "mscorlib_System_String2029220233.h"
 #include "UnityEngine_UnityEngine_Coroutine2299508840.h"
 #include "AssemblyU2DCSharp_Intro_Text_U3CTypeTextU3Ec__Iter1341327131.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_UInt322149682021.h"
 #include "mscorlib_System_Char3454481338.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds3839502067.h"
@@ -69,6 +70,10 @@ struct background_t3863973384;
 struct MonoBehaviour_t1158329972;
 // scoreManager
 struct scoreManager_t2403363277;
+// endScoreManager
+struct endScoreManager_t739037824;
+// System.String
+struct String_t;
 // HeartSystem
 struct HeartSystem_t3448635605;
 // UnityEngine.GameObject
@@ -87,8 +92,6 @@ struct IEnumerator_t1466026749;
 struct Coroutine_t2299508840;
 // Intro_Text/<TypeText>c__Iterator0
 struct U3CTypeTextU3Ec__Iterator0_t1341327131;
-// System.String
-struct String_t;
 // System.Char[]
 struct CharU5BU5D_t1328083999;
 // UnityEngine.WaitForSeconds
@@ -139,11 +142,14 @@ struct Animator_t69676727;
 struct wolfCount_t3913541383;
 extern Il2CppClass* scoreManager_t2403363277_il2cpp_TypeInfo_var;
 extern const uint32_t background_OnMouseDown_m1281932323_MetadataUsageId;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1756683522;
+extern Il2CppCodeGenString* _stringLiteral2247021248;
+extern const uint32_t endScoreManager_Start_m3500247687_MetadataUsageId;
 extern Il2CppClass* livesManager_t1202585870_il2cpp_TypeInfo_var;
 extern Il2CppClass* HeartSystem_t3448635605_il2cpp_TypeInfo_var;
 extern const uint32_t HeartSystem_Start_m2119168988_MetadataUsageId;
 extern const uint32_t HeartSystem_CheckHealth_m540688734_MetadataUsageId;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern const MethodInfo* Component_GetComponent_TisText_t356221433_m1342661039_MethodInfo_var;
 extern const uint32_t Intro_Text_Start_m1789666595_MetadataUsageId;
 extern Il2CppClass* U3CTypeTextU3Ec__Iterator0_t1341327131_il2cpp_TypeInfo_var;
@@ -167,13 +173,10 @@ extern const uint32_t lightManager_Update_m2444520683_MetadataUsageId;
 extern const uint32_t livesManager_Start_m1252561849_MetadataUsageId;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1932225602;
-extern Il2CppCodeGenString* _stringLiteral2247021248;
 extern Il2CppCodeGenString* _stringLiteral3898731968;
 extern const uint32_t livesManager_loseLife_m2166630822_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral1380649707;
 extern const uint32_t livesManager_updateText_m480717793_MetadataUsageId;
-extern Il2CppCodeGenString* _stringLiteral1756683522;
-extern const uint32_t menuManager_Start_m1528794095_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral891751758;
 extern const uint32_t menuManager_changeSceneToGame_m771116686_MetadataUsageId;
 extern const uint32_t menuManager_Retry_m1158583507_MetadataUsageId;
@@ -333,6 +336,12 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2812611596_g
 extern "C"  void MonoBehaviour__ctor_m2464341955 (MonoBehaviour_t1158329972 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void scoreManager::resetMultiplier()
 extern "C"  void scoreManager_resetMultiplier_m1978852772 (scoreManager_t2403363277 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String)
+extern "C"  int32_t PlayerPrefs_GetInt_m2889062785 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Int32::ToString()
+extern "C"  String_t* Int32_ToString_m2960866144 (int32_t* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.String,System.String)
+extern "C"  String_t* String_Concat_m2596409543 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GameObject::SetActive(System.Boolean)
 extern "C"  void GameObject_SetActive_m2887581199 (GameObject_t1756533147 * __this, bool p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.Text>()
@@ -391,12 +400,6 @@ extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused *
 extern "C"  void PlayerPrefs_SetInt_m3351928596 (Il2CppObject * __this /* static, unused */, String_t* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 extern "C"  void SceneManager_LoadScene_m1619949821 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.Int32::ToString()
-extern "C"  String_t* Int32_ToString_m2960866144 (int32_t* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.String::Concat(System.String,System.String)
-extern "C"  String_t* String_Concat_m2596409543 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String)
-extern "C"  int32_t PlayerPrefs_GetInt_m2889062785 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Application::Quit()
 extern "C"  void Application_Quit_m3885595876 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioSource::Play()
@@ -519,6 +522,45 @@ extern "C"  void background_OnMouseDown_m1281932323 (background_t3863973384 * __
 		IL2CPP_RUNTIME_CLASS_INIT(scoreManager_t2403363277_il2cpp_TypeInfo_var);
 		scoreManager_t2403363277 * L_0 = ((scoreManager_t2403363277_StaticFields*)scoreManager_t2403363277_il2cpp_TypeInfo_var->static_fields)->get_instance_6();
 		scoreManager_resetMultiplier_m1978852772(L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void endScoreManager::.ctor()
+extern "C"  void endScoreManager__ctor_m2937960139 (endScoreManager_t739037824 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void endScoreManager::Start()
+extern "C"  void endScoreManager_Start_m3500247687 (endScoreManager_t739037824 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (endScoreManager_Start_m3500247687_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = PlayerPrefs_GetInt_m2889062785(NULL /*static, unused*/, _stringLiteral2247021248, /*hidden argument*/NULL);
+		V_1 = L_0;
+		String_t* L_1 = Int32_ToString_m2960866144((&V_1), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral1756683522, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Text_t356221433 * L_3 = __this->get_scoreText_2();
+		String_t* L_4 = V_0;
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_4);
+		return;
+	}
+}
+// System.Void endScoreManager::Update()
+extern "C"  void endScoreManager_Update_m3642413886 (endScoreManager_t739037824 * __this, const MethodInfo* method)
+{
+	{
 		return;
 	}
 }
@@ -1322,24 +1364,7 @@ extern "C"  void menuManager__ctor_m210995403 (menuManager_t3432945898 * __this,
 // System.Void menuManager::Start()
 extern "C"  void menuManager_Start_m1528794095 (menuManager_t3432945898 * __this, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (menuManager_Start_m1528794095_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	String_t* V_0 = NULL;
-	int32_t V_1 = 0;
-	{
-		int32_t L_0 = PlayerPrefs_GetInt_m2889062785(NULL /*static, unused*/, _stringLiteral2247021248, /*hidden argument*/NULL);
-		V_1 = L_0;
-		String_t* L_1 = Int32_ToString_m2960866144((&V_1), /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral1756683522, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		Text_t356221433 * L_3 = __this->get_scoreText_2();
-		String_t* L_4 = V_0;
-		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_4);
 		return;
 	}
 }

@@ -1088,15 +1088,15 @@ extern const int32_t g_FieldOffsetTable1668[7];
 extern const int32_t g_FieldOffsetTable1669[7];
 extern const int32_t g_FieldOffsetTable1671[5];
 extern const int32_t g_FieldOffsetTable1672[4];
-extern const int32_t g_FieldOffsetTable1673[1];
 extern const int32_t g_FieldOffsetTable1674[3];
 extern const int32_t g_FieldOffsetTable1675[6];
 extern const int32_t g_FieldOffsetTable1676[5];
 extern const int32_t g_FieldOffsetTable1678[11];
 extern const int32_t g_FieldOffsetTable1679[4];
 extern const int32_t g_FieldOffsetTable1680[4];
+extern const int32_t g_FieldOffsetTable1682[1];
 
-extern const int32_t* g_FieldOffsetTable[1682] = 
+extern const int32_t* g_FieldOffsetTable[1683] = 
 {
 	NULL,
 	NULL,
@@ -2771,7 +2771,7 @@ extern const int32_t* g_FieldOffsetTable[1682] =
 	NULL,
 	g_FieldOffsetTable1671,
 	g_FieldOffsetTable1672,
-	g_FieldOffsetTable1673,
+	NULL,
 	g_FieldOffsetTable1674,
 	g_FieldOffsetTable1675,
 	g_FieldOffsetTable1676,
@@ -2780,6 +2780,7 @@ extern const int32_t* g_FieldOffsetTable[1682] =
 	g_FieldOffsetTable1679,
 	g_FieldOffsetTable1680,
 	NULL,
+	g_FieldOffsetTable1682,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize0;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1;
@@ -4463,7 +4464,8 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1678;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1679;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1680;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1681;
-extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[1682] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1682;
+extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[1683] = 
 {
 	&g_typeDefinitionSize0,
 	&g_typeDefinitionSize1,
@@ -6147,4 +6149,5 @@ extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[1682] =
 	&g_typeDefinitionSize1679,
 	&g_typeDefinitionSize1680,
 	&g_typeDefinitionSize1681,
+	&g_typeDefinitionSize1682,
 };

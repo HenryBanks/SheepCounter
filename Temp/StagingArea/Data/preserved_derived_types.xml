@@ -15,6 +15,7 @@
 <type fullname="sheepJump" preserve="all"/>
 <type fullname="sheepMove" preserve="all"/>
 <type fullname="wolfCount" preserve="all"/>
+<type fullname="endScoreManager" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>
