@@ -78,8 +78,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\HeartSystem.cs" />
     <Compile Include="Assets\Scripts\IntroText.cs" />
+    <Compile Include="Assets\Scripts\Intro_Text.cs" />
     <Compile Include="Assets\Scripts\background.cs" />
+    <Compile Include="Assets\Scripts\lightManager.cs" />
+    <Compile Include="Assets\Scripts\livesManager.cs" />
     <Compile Include="Assets\Scripts\menuManager.cs" />
     <Compile Include="Assets\Scripts\musicManager.cs" />
     <Compile Include="Assets\Scripts\scoreManager.cs" />
