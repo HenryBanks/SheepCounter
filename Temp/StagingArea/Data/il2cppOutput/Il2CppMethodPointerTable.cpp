@@ -8636,6 +8636,11 @@ extern "C" void Plane__ctor_m3187718367_AdjustorThunk ();
 extern "C" void Plane_get_normal_m1872443823_AdjustorThunk ();
 extern "C" void Plane_get_distance_m1834776091_AdjustorThunk ();
 extern "C" void Plane_Raycast_m2870142810_AdjustorThunk ();
+extern "C" void PlayerPrefs_TrySetInt_m965228897 ();
+extern "C" void PlayerPrefs_SetInt_m3351928596 ();
+extern "C" void PlayerPrefs_GetInt_m136681260 ();
+extern "C" void PlayerPrefs_GetInt_m2889062785 ();
+extern "C" void PlayerPrefsException__ctor_m1748847897 ();
 extern "C" void PreferBinarySerialization__ctor_m2043201510 ();
 extern "C" void PropertyAttribute__ctor_m3663555848 ();
 extern "C" void Quaternion__ctor_m3196903881_AdjustorThunk ();
@@ -10662,7 +10667,7 @@ extern "C" void wolfCount__ctor_m2392022582 ();
 extern "C" void wolfCount_Start_m489321762 ();
 extern "C" void wolfCount_Update_m1747015947 ();
 extern "C" void wolfCount_OnMouseDown_m2835789314 ();
-extern const Il2CppMethodPointer g_MethodPointers[10648] = 
+extern const Il2CppMethodPointer g_MethodPointers[10653] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -19286,6 +19291,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10648] =
 	Plane_get_normal_m1872443823_AdjustorThunk,
 	Plane_get_distance_m1834776091_AdjustorThunk,
 	Plane_Raycast_m2870142810_AdjustorThunk,
+	PlayerPrefs_TrySetInt_m965228897,
+	PlayerPrefs_SetInt_m3351928596,
+	PlayerPrefs_GetInt_m136681260,
+	PlayerPrefs_GetInt_m2889062785,
+	PlayerPrefsException__ctor_m1748847897,
 	PreferBinarySerialization__ctor_m2043201510,
 	PropertyAttribute__ctor_m3663555848,
 	Quaternion__ctor_m3196903881_AdjustorThunk,

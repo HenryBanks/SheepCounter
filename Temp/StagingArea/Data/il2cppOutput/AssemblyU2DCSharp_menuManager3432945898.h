@@ -12,6 +12,8 @@
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 
+// UnityEngine.UI.Text
+struct Text_t356221433;
 
 
 
@@ -26,8 +28,18 @@
 struct  menuManager_t3432945898  : public MonoBehaviour_t1158329972
 {
 public:
+	// UnityEngine.UI.Text menuManager::scoreText
+	Text_t356221433 * ___scoreText_2;
 
 public:
+	inline static int32_t get_offset_of_scoreText_2() { return static_cast<int32_t>(offsetof(menuManager_t3432945898, ___scoreText_2)); }
+	inline Text_t356221433 * get_scoreText_2() const { return ___scoreText_2; }
+	inline Text_t356221433 ** get_address_of_scoreText_2() { return &___scoreText_2; }
+	inline void set_scoreText_2(Text_t356221433 * value)
+	{
+		___scoreText_2 = value;
+		Il2CppCodeGenWriteBarrier(&___scoreText_2, value);
+	}
 };
 
 #ifdef __clang__
