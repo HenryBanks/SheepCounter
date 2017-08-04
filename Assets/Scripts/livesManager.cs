@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class livesManager : MonoBehaviour {
 
 	public int maxLives=3;
-	private int currentLives;
+	public static int currentLives;
 	public Text livesText;
 
 	public static livesManager instance;

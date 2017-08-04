@@ -23,8 +23,12 @@ public class sheepMove : MonoBehaviour {
         if (transform.tag == "sheep") {
             MyAnim.SetFloat("height", transform.position.y);
         }
-        
-	}
+        if (transform.tag == "Wolf")
+        {
+            MyAnim.SetFloat("height", transform.position.y);
+        }
+
+    }
 
     void RandomSpeed() {
 		moveSpeed = Random.Range(minSpeed, maxSpeed);
