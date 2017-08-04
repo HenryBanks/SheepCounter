@@ -1,0 +1,9 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="menuManager">
+			<method name="changeSceneToGame"/>
+			<method name="Quit"/>
+			<method name="Retry"/>
+		</type>
+	</assembly>
+</linker>

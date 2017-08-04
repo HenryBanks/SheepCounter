@@ -29,6 +29,7 @@ public class livesManager : MonoBehaviour {
 		HeartSystem.instance.CheckHealth();
 		if (currentLives <= 0) {
 			Debug.Log ("Game Over");
+			PlayerPrefs.SetInt ("score",scoreManager.instance.getScore());
 			SceneManager.LoadScene("Scenes/GameOver");
 		}
 		updateText ();
