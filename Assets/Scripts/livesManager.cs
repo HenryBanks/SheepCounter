@@ -26,6 +26,7 @@ public class livesManager : MonoBehaviour {
 
 	public void loseLife(){
 		currentLives--;
+		HeartSystem.instance.CheckHealth();
 		if (currentLives <= 0) {
 			Debug.Log ("Game Over");
 			SceneManager.LoadScene("Scenes/GameOver");

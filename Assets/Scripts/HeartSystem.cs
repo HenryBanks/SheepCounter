@@ -14,19 +14,22 @@ public class HeartSystem : MonoBehaviour {
 	public GameObject[] healthImages;
     public Sprite[] healthSprites;
 
+	public static HeartSystem instance;
+
     // Use this for initialization
     void Start() {
         //curHealth = startHeart * livePerHeart;
         curHealth = livesManager.currentLives;
         maxHealth = maxHeart * livePerHeart;
+		instance = this;
     }
 
     // Update is called once per frame
     void Update() {
-        CheckHealth();
+        //CheckHealth();
     }
 
-    void CheckHealth()
+    public void CheckHealth()
     {
       
 
