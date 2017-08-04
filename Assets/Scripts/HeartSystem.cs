@@ -11,7 +11,7 @@ public class HeartSystem : MonoBehaviour {
     private int maxHealth;
     private int livePerHeart = 1;
 
-    public Image[] healthImages;
+	public GameObject[] healthImages;
     public Sprite[] healthSprites;
 
     // Use this for initialization
@@ -31,30 +31,30 @@ public class HeartSystem : MonoBehaviour {
       
 
         if (livesManager.currentLives == 3) {
-            healthImages[0].enabled = true;
-            healthImages[1].enabled = true;
-            healthImages[2].enabled = true;
+			healthImages[0].SetActive(true);
+			healthImages[1].SetActive(true);
+			healthImages[2].SetActive(true);
         }
 
         if (livesManager.currentLives == 2)
         {
-            healthImages[0].enabled = true;
-            healthImages[1].enabled = true;
-            healthImages[2].enabled = false;
+			healthImages[0].SetActive(true);
+			healthImages[1].SetActive(true);
+			healthImages[2].SetActive(false);
         }
 
         if (livesManager.currentLives == 1)
         {
-            healthImages[0].enabled = true;
-            healthImages[1].enabled = false;
-            healthImages[2].enabled = false;
+			healthImages[0].SetActive(true);
+			healthImages[1].SetActive(false);
+			healthImages[2].SetActive(false);
         }
 
         if (livesManager.currentLives == 0)
         {
-            healthImages[0].enabled = false;
-            healthImages[1].enabled = false;
-            healthImages[2].enabled = false;
+			healthImages[0].SetActive(false);
+			healthImages[1].SetActive(false);
+			healthImages[2].SetActive(false);
         }
 
     }
